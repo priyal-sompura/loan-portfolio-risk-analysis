@@ -1,0 +1,55 @@
+
+Step 1: Navigate to the Project Directory
+
+cd /mnt/c/Users/Priyal/Loan_Portfolio_Risk_Analysis
+
+
+Step 2: Activate the Virtual Environment
+
+source venv_etl/bin/activate
+
+
+Step 3: Navigate to the Airflow DAG Directory
+
+cd airflow_dag
+
+
+Step 4: Check Docker Containers
+
+docker ps
+
+
+Step 5: Start Airflow Containers
+
+docker compose up -d
+
+
+Step 6: Open Airflow UI
+
+Open your browser and navigate to: http://localhost:8080
+
+
+Step 7: Run the DAG from Airflow UI
+1.Locate loan_portfolio_etl DAG.
+2.Enable the DAG using the toggle button.
+3.Click Trigger DAG.
+4.Monitor execution in Grid View or Graph View.
+
+
+Alternative: Step 7 Run the DAG Manually from Terminal
+
+    docker exec -it airflow_dag-webserver-1 airflow dags trigger loan_portfolio_etl
+
+Check DAG status:
+docker exec -it airflow-webserver airflow dags list-runs -d loan_portfolio_etl
+
+View task logs:
+docker exec -it airflow-webserver airflow tasks logs loan_portfolio_etl run_etl
+
+
+// Stop Airflow Services
+
+Stop all running containers:
+docker compose down
+
+//
