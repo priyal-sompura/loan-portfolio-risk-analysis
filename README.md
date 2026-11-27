@@ -25,7 +25,7 @@ This project solves critical operational and analytical bottlenecks:
 ### 🎯 Key Outcomes Delivered:
 - **1,000 Loan Accounts Analyzed:** Covering **₹97.95L** in cumulative disbursements.
 - **Automated Daily Data Pipeline:** Zero-touch ingestion and validation via containerized **Apache Airflow**.
-- **98.90% Portfolio Recovery Rate:** Realized through granular repayment tracking across 88 branches and 120 borrowing groups.
+- **98.90% Portfolio Recovery Rate:** Realized through granular repayment tracking across 88 branches and 120 active borrowing groups (582 groups in total).
 - **0.72% PAR Rate / 2.10% Loans at Risk:** Quantified across 30, 60, and 90-day aging delinquency buckets.
 
 ---
@@ -162,7 +162,7 @@ Analyzes borrower retention, borrowing group dynamics, and risk segmentation by 
 ## 📂 Repository Organization
 
 ```text
-loan_portfolio_risk_analysis/
+loan-portfolio-risk-analysis/
 │
 ├── .gitignore                                 # Git rules ignoring venvs, logs & secrets
 ├── README.md                                  # ⭐ Project master documentation
@@ -254,8 +254,8 @@ loan_portfolio_risk_analysis/
 
 ### 1. Clone Repository & Setup Virtual Environment
 ```bash
-git clone https://github.com/<your-username>/loan_portfolio_risk_analysis.git
-cd loan_portfolio_risk_analysis
+git clone https://github.com/priyal-sompura/loan-portfolio-risk-analysis.git
+cd loan-portfolio-risk-analysis
 
 # Create and activate environment
 python -m venv venv
@@ -304,5 +304,5 @@ For a presentation-ready project walkthrough, refer to the included executive sl
 ## 👤 Author & Contact
 - **Author:** Priyal Sompura
 - **Domain:** Data Engineering · Financial Risk Analytics · Business Intelligence
-- **LinkedIn:** [linkedin.com/in/priyal-sompura](https://www.linkedin.com)
+- **LinkedIn:** [linkedin.com/in/priyal-sompura](https://www.linkedin.com/in/priyal-sompura/)
 
